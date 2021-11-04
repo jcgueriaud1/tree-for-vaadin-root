@@ -7,7 +7,6 @@ import com.vaadin.flow.component.DomEvent;
 import com.vaadin.flow.component.EventData;
 import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.dependency.JsModule;
-import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.data.provider.hierarchy.TreeData;
 import com.vaadin.flow.function.ValueProvider;
 import com.vaadin.flow.shared.Registration;
@@ -31,8 +30,9 @@ import java.util.stream.Stream;
  * @author jcgueriaud
  */
 @Tag("xof-tree")
-@NpmPackage(value = "xof-tree", version = "0.1.4")
-@JsModule("xof-tree/dist/index.js")
+/*@NpmPackage(value = "xof-tree", version = "0.1.4")
+@JsModule("xof-tree/dist/index.js")*/
+@JsModule("./src/index.ts")
 public class Tree<T> extends Component {
 
     private TreeData<T> treeData;
